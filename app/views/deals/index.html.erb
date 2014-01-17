@@ -1,0 +1,37 @@
+<!-- Main Section of the Site -->
+<header id="head">
+  <div class="inner">
+      <a href="#" class="logotext square"><h1>Santa Clara Deals</h1></a>
+    <div class="details right">
+
+      <div class="message">
+        <!-- Fading text. See core.js for list of words. -->
+        <p class="large">Find deals for <span id="words"></span></p>
+
+        <!-- Static text -->
+        <p class="medium">Finding great deals where there were none in Santa Clara, Sunnyvale, Campbell, Los Altos and Mountain View.</p>
+        <p class="small">We're currently building our team and partnering with businesses to bring you the best deals in the area. Whether you're looking for cheap haircuts or discounts on sushi restaurants, you'll soon get it. Sign-up below so you don't miss out. </p>
+      </div>
+
+      <!-- Signup Form  -->
+        <%= form_for @new_consumer, url: consumers_path(@musician), method: "post", html: {class: "newsletter", id: "subscribe"} do |f| %>
+            <input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Sign Me Up!</button> 
+          <p class="note">We won't spam you. Pinky swear.</p>
+        <% end %>
+    </div>
+  </div>
+</header>
+
+<!-- Footer Section -->
+<section class="body">
+  <br><br>
+  <div class="inner">
+    <div class="right_text">
+       If you're a business with deals to offer, please contact us at info@santaclaradeals.com.
+    </div>
+    <div class="copyright">
+      <p>&copy; 2013 <a href="http://danielhellier.com">Santa Clara Deals</a>.</p>
+      <p>All Rights Reserved.</p>
+    </div>
+  </div>
+</section>
