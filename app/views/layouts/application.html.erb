@@ -35,13 +35,6 @@
     <meta name="google-site-verification" content="fZ_gF6ISLhvJd20cowEMyuog_hhJn5fI4TRR1DOTTQQ" />
   </head>
   <body>
-    <div id="container_flash">
-      <% flash.each do |key, value| %>
-        <div class='flash' id='<%= key %>'>
-          <%= value %>
-        </div>
-      <% end %>
-    </div>
 
     <%= yield %>
 
