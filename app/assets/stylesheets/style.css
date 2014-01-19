@@ -12,6 +12,9 @@ html, body {
 	font-family:'muli', Verdana, sans-serif;
 }
 
+.float_left {
+	float:left;
+}
 
 .flash {
 padding: 10px 20px 10px;
