@@ -6,7 +6,7 @@ class ConsumersController < ApplicationController
       flash[:notice] = "You have been added to the email list!"
       redirect_to :root
     else
-      flash[:alert] = "Yay! You are already on the list!."
+      flash[:alert] = @consumer.errors.values.join('. ')
       redirect_to :root
     end
   end

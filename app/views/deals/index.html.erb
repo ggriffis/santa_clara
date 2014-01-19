@@ -1,13 +1,6 @@
 <!-- Main Section of the Site -->
 <header id="head">
   <div class="inner">
-    <div id="container_flash">
-      <% flash.each do |key, value| %>
-        <div class='flash' id='<%= key %>'>
-          <%= value %>
-        </div>
-      <% end %>
-    </div>
     <a href="#" class="logotext square"><h1>Santa Clara Deals</h1></a>
     <div class="details right">
 
@@ -24,6 +17,13 @@
         <%= form_for @new_consumer, url: consumers_path(@musician), method: "post", html: {class: "newsletter", id: "subscribe"} do |f| %>
             <input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Sign Me Up!</button> 
           <p class="note">We won't spam you. Pinky swear.</p>
+          <div id="container_flash">
+            <% flash.each do |key, value| %>
+              <div class='flash' id='<%= key %>'>
+                <%= value %>
+              </div>
+            <% end %>
+          </div>
         <% end %>
     </div>
   </div>
