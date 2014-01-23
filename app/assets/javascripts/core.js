@@ -128,16 +128,7 @@ if ($('#words').length) {
 
             words: [
                 {
-                    review: "Y"
-                },
-                {
-                    review: "FaceBook"
-                },
-                {
-                    review: "Twitter"
-                },
-                {
-                    review: "[this loops.]"
+                    review: ""
                 }
             ]
 
