@@ -455,7 +455,7 @@ max-width: 300px;
 }
 
 .body {
-	background:#fff url('shadow-noise.png') repeat-x 0 2px;
+	background:#fff image-url('shadow-noise.png') repeat-x 0 2px;
 	color:#0b0a08;
 	display:block;
 	width:100%;
