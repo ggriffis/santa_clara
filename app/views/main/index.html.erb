@@ -18,17 +18,17 @@
           </div>
 
           <!-- Signup Form  -->
-            <%= form_for @new_consumer, url: consumers_path, method: "post", html: {class: "newsletter", id: "subscribe"} do |f| %>
-                <input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Sign Me Up!</button> 
-              <p class="note">We won't spam you. Pinky swear.</p>
-              <div id="container_flash">
-                <% flash.each do |key, value| %>
-                  <div class='flash' id='<%= key %>'>
-                    <%= value %>
-                  </div>
-                <% end %>
-              </div>
-            <% end %>
+          <%= form_for @new_consumer, url: consumers_path, method: "post", html: {class: "newsletter", id: "subscribe"} do |f| %>
+              <input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Sign Me Up!</button> 
+            <p class="note">We won't spam you. Pinky swear.</p>
+            <div id="container_flash">
+              <% flash.each do |key, value| %>
+                <div class='flash' id='<%= key %>'>
+                  <%= value %>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
